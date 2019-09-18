@@ -1,0 +1,299 @@
+#html {
+	font-style: monospace;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.ok {
+	font-family: Yu Gothic;
+  }
+  
+
+a:link {
+	color: #776d5f
+}
+
+a:visited {
+	color: #bdad97
+}
+
+a:hover {
+	color: #bdad97
+}
+
+
+.nav li a {
+	font-family: Yu Gothic;
+
+}
+
+
+.nav {
+	width: 950px;
+	height: 40px;
+	margin: 0 auto;
+	padding: 0;
+	display: flex;
+  }
+  .nav li {
+	position: relative;
+	list-style: none;
+  }
+  .nav li a {
+	display: block;
+	width: 190px;
+	height: 40px;
+	text-align: center;
+	color: #776d5f;
+	font-size: 13.5px;
+	line-height: 2.8;
+	background: #ffffff;
+	text-decoration: none;
+	box-sizing: border-box;
+	border:0.5px solid rgb(224, 216, 209);
+	border-top:1px transparent solid;
+	border-bottom:1px transparent solid;
+	margin-left:-2px;
+  }
+
+  .nav > li:hover > a {/*layer-1*/
+	color: #bdad97;
+	background: #ffffff;
+  }
+  .nav > li li:hover > a {/*layer-2*/
+	color: #bdad97;
+	background: #ffffff;
+  }
+  .nav li ul {
+	top: 40px;
+	left: -39px;
+	position: absolute;
+  }
+  .nav li ul li {
+	overflow: hidden;
+	height: 0;
+	margin: -1px;
+  }
+  .nav li ul li a {
+	border-top: 0.5px solid rgb(235, 235, 235);
+	border-bottom: 0.5px solid rgb(235, 235, 235);
+	width: 188.5px;
+  }
+  .nav li:hover > ul > li {
+	overflow: visible;
+	height: 40px;
+  }
+	.nav li ul li ul {
+	  top: 0;
+	  left: 110px;
+	}
+	.nav li ul li ul:before {/*layer-2▷*/
+	  position: absolute;
+	  content: "";
+	  top: 15px;
+	  left: 30px;
+	  border: 5px solid transparent;
+	  border-left: 5px solid #fff;
+	}
+	.nav li ul li ul li:hover > a {/*layer-3*/
+	  color: pink;
+	  background: #ffffff;
+	}
+	.nav li ul li ul.left {
+	  top: 0;
+	  left: -190px;
+	}
+	.nav li ul li ul.left:before,/*layer-2-left▷*/
+	.nav li ul li ul li ul.left:before {/*layer-3-left▷*/
+	  position: absolute;
+	  content: "";
+	  top: 15px;
+	  left: 190px;
+	  border: 5px solid transparent;
+	  border-right: 5px solid #fff;
+	}
+
+	li a {
+		transition: color .3s;
+	  }
+.nav li {
+		-webkit-transition: 0.5s;
+		-moz-transition: 0.5s;
+		-ms-transition: 0.5s;
+		-o-transition: 0.5s;
+		transition: 0.5s;
+	  }
+ 
+
+
+
+/* INTRODUCTION開始 */
+
+
+
+/*バナー全体のサイズ*/
+.iwabuchi {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+	text-align: center;
+	top: 0px;
+	left: 128px;
+}
+ 
+.hayakawa {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+	text-align: center;
+	top: -300px;
+	left: 480px;
+}
+
+.flower {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+	text-align: center;
+	top: -600px;
+	left: 830px;
+}
+
+.den {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+	text-align: center;
+	top: -550px;
+	left: 128px;
+}
+
+.muto {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+	text-align: center;
+	top: -850px;
+	left: 480px;
+}
+
+.seiga {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+	text-align: center;
+	top: -1150px;
+	left: 830px;
+}
+
+.itsuki {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+	text-align: center;
+	top: -1100px;
+	left: 128px;
+}
+
+.gallage {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+	text-align: center;
+	top: -1400px;
+	left: 480px;
+}
+
+.momo {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+	text-align: center;
+	top: -1700px;
+	left: 830px;
+	margin-bottom: -1570px;
+	margin-right: 1100px;
+}
+
+/*マウスオーバーするマスク*/
+.banner .mask{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+}
+  
+/*テキスト*/
+.banner p {
+	font-size: 20px;
+	font-family: Yu Gothic;
+    position: relative;
+	color: rgb(87, 71, 61);
+    text-align: center
+}
+
+/*黒にする*/
+.banner-view .mask {
+    opacity: 0;
+    background-color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+ 
+/*マウスオーバーしたとき　不透明度を下げる**/
+.banner-view:hover .mask {
+    opacity: 0.75;
+}
+
+/* INTRODUCTION終了 */
+
+/*CONTACT開始*/
+
+
+
+
+  
+
+/*CONTACT終了*/
+
+
+
+/* footer開始 */
+
+#footer {
+	font-size: 13px;
+	padding: 15px;
+	clear: both;
+	color: #695f55;
+	text-align: right;
+}
+
+#footer li {
+	display: inline;
+	text-align: center;
+}
+
+#footer a {
+	text-decoration: none;
+}
+
+#footer li a {
+	text-decoration: none;
+}
+
+#footer address {
+	font-size: 80%;
+}
+

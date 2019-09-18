@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/* link styles
+------------------------------*/
+a img {
+	border-style: none;
+}
+a:link {
+	color: #333333;
+	text-decoration: underline;
+}
+a:visited {
+	color: #999999;
+	text-decoration: underline;
+}
+a:hover {
+	color: #000000;
+	text-decoration: none;
+}
+a:active {
+	color: #000000;
+	text-decoration: none;
+	position: relative;
+	left: 1px;
+	top: 1px;
+}
